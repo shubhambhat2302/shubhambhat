@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
     
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shubham Bhat</title>
+    <script type= "text/javascript">
+
+      if(document.createTextNode){
+        onload= function(){
+          var who=document.getElementById('timer');		
+          var pa=who.parentNode;		
+          if(!window.timerstart) window.timerstart= new Date();
+          pa.style.visibility='visible';		
+          window.timershow=setInterval(function(){
+            var t= Math.floor((new Date()-window.timerstart)/1000)
+            who.firstChild.data=t;			
+          },
+          1000)
+          pa.ondblclick= function(){
+            clearInterval(timershow);
+            pa.ondblclick=window.onload;
+          }
+        }	
+      }
+      </script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
@@ -56,7 +90,6 @@
       </div>
       <div class="section">
         <div class="container">
-          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/shubham.bhat.37" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/SHUBHAM99890475" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/shubhamvbhat/" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
         </div>
       </div>
     </div>
@@ -155,6 +188,22 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Public Speaking/Presentation Skills</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div><span class="progress-value">95%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Leadership Skills</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -163,7 +212,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 ml-auto mr-auto">
-        <div class="h4 text-center mb-4 title">My recent Works</div>
+        <div class="h4 text-center mb-4 title">My Recent Works And Activities</div>
         <!-- <div class="nav-align-center">
           <ul class="nav nav-pills nav-pills-primary" role="tablist">
             <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
@@ -178,41 +227,41 @@
         <div class="ml-auto mr-auto">
           <div class="row">
             <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-1.jpg" alt="Image"/>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://shubhambhat2302.github.io/travelblog/">
+                  <figure class="cc-effect"><img src="images/blog.png" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Recent Project</div>
-                      <p>Web Development</p>
+                      <div class="h4" style="color:yellow;">The Travel Blogging Site</div>
+                      <p style="color:yellow;">Travel blogging site created by me, check out my front end skills in this!!!</p>
                     </figcaption>
                   </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image"/>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://shubhambhat2302.github.io/shubhambhat2.github.io/">#web-development
+                  <figure class="cc-effect"><img src="images/ppt.png" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Startup Project</div>
-                      <p>Web Development</p>
+                      <div class="h4">Me Presenting A PPT</div>
+                      <p>Check out my presentation and public speaking skills in this video!!!</p>
                     </figcaption>
                   </figure></a></div>
             </div>
-            <div class="col-md-6">
+             <div class="col-md-6">
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image"/>
+                  <figure class="cc-effect"><img src="images/form.png" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Food Order Project</div>
-                      <p>Web Development</p>
+                      <div class="h4">Course Feedback Form</div>
+                      <p>Site created by me to take user feedback, check out my backend skills in this!!!</p>
                     </figcaption>
                   </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+             <!-- <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
                   <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Web Advertising Project</div>
                       <p>Web Development</p>
                     </figcaption>
                   </figure></a></div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
-      <div class="tab-pane" id="graphic-design" role="tabpanel">
+      <!-- <div class="tab-pane" id="graphic-design" role="tabpanel">
         <div class="ml-auto mr-auto">
           <div class="row">
             <div class="col-md-6">
@@ -245,12 +294,12 @@
                       <div class="h4">Abstract Line</div>
                       <p>Graphic Design</p>
                     </figcaption>
-                  </figure></a></div>
+                  </figure></a></div>-->
             </div>
           </div>
         </div>
       </div>
-      <div class="tab-pane" id="Photography" role="tabpanel">
+     <!-- <div class="tab-pane" id="Photography" role="tabpanel">
         <div class="ml-auto mr-auto">
           <div class="row">
             <div class="col-md-6">
@@ -290,7 +339,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 <div class="section" id="experience">
@@ -300,19 +349,19 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-experience-header">
-            <p>March 2016 - Present</p>
-            <div class="h5">CreativeM</div>
+            <p>September 2020 - January 2021</p>
+            <div class="h5">HEXCODERZ</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Front End Developer</div>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+            <div class="h5">Trainig Intern</div>
+        <p>Leaned the web development technologies like HTML,CSS,JavaScript,Bootstrap,PHP,MySql. Developed a project at the end of the training, which is a ready to land, dynamic, responsive website, using all the knowledge and skills acquired during training.</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="card">
+    <!-- <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-experience-header">
@@ -342,8 +391,8 @@
             <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
           </div>
         </div>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
   </div>
 </div>
 <div class="section">
@@ -353,15 +402,14 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>2013 - 2015</p>
-            <div class="h5">Master's Degree</div>
+            <p>June 2018 - Present</p>
+            <div class="h5">Diploma</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Master of Information Technology</div>
-            <p class="category">University of Computer Science</p>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+            <div class="h5">Diploma In Computer Engineering</div>
+            <p class="category">Agnel Polytechnic, Verna</p>
           </div>
         </div>
       </div>
@@ -370,15 +418,14 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>2009 - 2013</p>
-            <div class="h5">Bachelor's Degree</div>
+            <p>June 2016 - June 2018</p>
+            <div class="h5">Higher Secondary School</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Bachelor of Computer Science</div>
-            <p class="category">University of Computer Science</p>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+            <div class="h5">Higher Secondary School Certificate</div>
+            <p class="category">Loyola Higher Secondary School,Margao</p>
           </div>
         </div>
       </div>
@@ -387,15 +434,14 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>2007 - 2009</p>
-            <div class="h5">High School</div>
+            <p>June 2006 - June 2016</p>
+            <div class="h5">Secondary School</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Science and Mathematics</div>
-            <p class="category">School of Secondary board</p>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+            <div class="h5">Secondary School Certificate</div>
+            <p class="category">Mahila And Nutan English High School, Margao</p>
           </div>
         </div>
       </div>
@@ -415,16 +461,16 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-1.jpg" alt="Image"/>
-                <div class="h5 pt-2">Aiyana</div>
-                <p class="category">CEO / WEBM</p>
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/sanjeetsir.png" alt="Image"/>
+                <div class="h5 pt-2">Sanjeet Kanekar</div>
+                <p class="category">Faculty,Comp. Engg Dept,Agnel Polytechnic Verna</p>
               </div>
               <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
+                <p> Shubham Bhat was my student. He is a good developer. He has a spirit to learn new skills. He tries his level best to make his work very impressive.</p>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <div class="row">
               <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-2.jpg" alt="Image"/>
                 <div class="h5 pt-2">Braiden</div>
@@ -445,13 +491,33 @@
                 <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="section" id="contact">
+<section class="site-section section-counters text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <p class="counter start" data-to="10" data-speed="2000">1</p>
+                <h4>Years Experience</h4>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <p class="counter start" data-to="120" data-speed="2000">3</p>       
+                <h4>Projects Delivered</h4>      
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000"><span id="timer">&nbsp;</span></p>
+                <h4>Seconds on this site!<br>What are you waiting for?</h4>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- /.section-counters -->
+
+<!-- <div class="section" id="contact">
   <div class="cc-contact-information" style="background-image: url('images/staticmap.png')">
     <div class="container">
       <div class="cc-contact">
@@ -499,8 +565,30 @@
                       </div>
                     </form>
                   </div>
-                </div>
-                <div class="col-md-6">
+                </div> -->
+
+                <section id="contact" class="site-section section-form text-center">
+                  <div class="container">
+      
+                      <h3>Contact</h3>
+                      <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                      <form>
+                          <div class="row">
+                              <div class="col-sm-6">
+                                  <input type="text" name="name" class="form-control mt-x-0" placeholder="Name" required>
+                              </div>
+                              <div class="col-sm-6">
+                                  <input type="email" name="email" class="form-control" placeholder="Email" required>   
+                              </div>
+                              <div class="col-sm-12">
+                                  <textarea name="message" id="mesaage" class="form-control" placeholder="Message" required></textarea>
+                              </div>
+                          </div>
+                          <button href="#" class="btn btn-border" type="submit">Hire Me <span class="glyphicon glyphicon-send"></span></button>
+                      </form>
+                  </div>
+              </section><!-- /.section-form -->
+                <!-- <div class="col-md-6">
                   <div class="card-body">
                     <p class="mb-0"><strong>Address </strong></p>
                     <p class="pb-2">140, City Center, New York, U.S.A</p>
@@ -509,7 +597,7 @@
                     <p class="mb-0"><strong>Email</strong></p>
                     <p>anthony@company.com</p>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -517,11 +605,12 @@
       </div>
     </div>
   </div>
+  
 </div></div>
     </div>
     <footer class="footer">
-      <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
-      <div class="h4 title text-center">Anthony Barnett</div>
+      <div class="container text-center"><a class="cc-facebook btn btn-link" href="https://www.facebook.com/shubham.bhat.37"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="https://twitter.com/SHUBHAM99890475"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="https://www.instagram.com/shubhamvbhat/"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
+      <div class="h4 title text-center">Shubham Bhat</div>
       <div class="text-center text-muted">
       </div>
     </footer>
@@ -532,4 +621,4 @@
     <script src="js/aos.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
   </body>
-</html>
+</html>          
